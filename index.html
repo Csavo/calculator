@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+	<title>Calculator Project</title>
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			color: #252525;
+		}
+		.xlogx {
+			font-size: 14px;
+			color: #555555;
+			width: 100%;
+			margin: 0px 5px 0px 5px;
+		}
+		.xinputx {
+			font-size: 36px;
+			font-weight: 700;
+			width: 100%;
+			margin: 5px;
+			background-color: #e1e1e1;
+			border: none;
+		}
+		.xbuttons-containerx {
+			display: flex; 
+			display: -webkit-flex;
+			flex-wrap: wrap;
+			margin: auto;
+			width: 316px;
+			padding: 2px;
+			background-color: #e1e1e1;
+			border: 1px solid #959595;
+		}
+		.xbuttonx {
+			width: 75px;
+			height: 45px;
+			line-height: 45px;
+			text-align: center;
+			margin: 1px;
+			background-color: #ebebeb;
+			border: 1px solid #ebebeb;
+			/* removes selected highlights */
+			user-select: none;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			/* end of removing selected highlights */
+		}
+		.xbuttonx:hover {
+			background-color: #cccccc;
+			border: 1px solid #959595;
+		}
+		.xbuttonx:active {
+			background-color: #acacac;
+			border: 1px solid #959595;
+		}
+		.xnumberx {
+			font-weight: 700;
+			background-color: #ffffff;
+			border: 1px solid #ffffff;
+		}
+		ion-icon {
+			font-size: 18px;
+			margin-top: 13px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="xbuttons-containerx">
+		<div class="xlogx">1337 + 69</div>
+		<input type="text" class="xinputx" readonly>
+		
+		<div class="xbuttonx" id="op-c" data-clear="1">C</div>
+		<div class="xbuttonx" id="op-ce" data-clearentry="1">CE</i></div>
+		<div class="xbuttonx" id="op-square">x²</i></div>
+		<div class="xbuttonx" id="op-sqrt">√x</i></div>
+		
+		<div class="xbuttonx" id="op-br-open">(</div>
+		<div class="xbuttonx" id="op-br-close">)</div>
+		<div class="xbuttonx" id="op-backspace" data-backspace="1"><ion-icon ios="ios-backspace" md="md-backspace"></ion-icon></div>
+		<div class="xbuttonx" id="op-divide">÷</div>
+		
+		<div class="xbuttonx xnumberx" id="nr-7" data-value="7">7</div>
+		<div class="xbuttonx xnumberx" id="nr-8" data-value="8">8</div>
+		<div class="xbuttonx xnumberx" id="nr-9" data-value="9">9</div>
+		<div class="xbuttonx" id="op-multiply">×</div>
+		
+		<div class="xbuttonx xnumberx" id="nr-4" data-value="4">4</div>
+		<div class="xbuttonx xnumberx" id="nr-5" data-value="5">5</div>
+		<div class="xbuttonx xnumberx" id="nr-6" data-value="6">6</div>
+		<div class="xbuttonx" id="op-substract">−</div>
+		
+		<div class="xbuttonx xnumberx" id="nr-1" data-value="1">1</div>
+		<div class="xbuttonx xnumberx" id="nr-2" data-value="2">2</div>
+		<div class="xbuttonx xnumberx" id="nr-3" data-value="3">3</div>
+		<div class="xbuttonx" id="op-add">+</div>
+		
+		<div class="xbuttonx" id="op-negative">±</div>
+		<div class="xbuttonx xnumberx" id="nr-0" data-value="0">0</div>
+		<div class="xbuttonx" id="op-decimal" data-value=".">.</div>
+		<div class="xbuttonx" id="op-equals">=</div>
+	</div>
+	<script src="calc.js"></script>
+</body>
+</html>
